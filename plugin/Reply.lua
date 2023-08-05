@@ -1,7 +1,7 @@
 function reply(msg)
 text = nil
 if msg and msg.content and msg.content.text then
-xname =  (Redis:get(Fast.."Name:Bot") or "كرستين") 
+xname =  (Redis:get(Fast.."Name:Bot") or "فخم") 
 text = msg.content.text.text
 if text:match("^"..xname.." (.*)$") then
 text = text:match("^"..xname.." (.*)$")
